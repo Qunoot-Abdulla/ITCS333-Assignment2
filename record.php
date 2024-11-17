@@ -1,4 +1,4 @@
-<!--ITCS333-->
+<!--a PHP application that retrieves and displays UOB student nationality data from the Bahrain Open Data Portal using their public API.-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
