@@ -6,6 +6,7 @@ The PHP file is done by Qunoot Sayed Mahdi Khalil Ali Abdulla (202209102)-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/pico.css">
+    <link rel="stylesheet" href="Style.css">
     <title>UOB Student Nationality Data</title>
 </head>
 <body>
@@ -20,8 +21,6 @@ The PHP file is done by Qunoot Sayed Mahdi Khalil Ali Abdulla (202209102)-->
         echo '<tr><th>Year</th><th>Semester</th><th>Nationality</th><th>Number of Students</th></tr>';
         echo '</thead>';
         echo '<tbody>';
-
-        // Loop through the results and output each record
         foreach ($result['results'] as $record) {
             echo '<tr>';
             echo '<td>' . htmlspecialchars($record['year']) . '</td>';
