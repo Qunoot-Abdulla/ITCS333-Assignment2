@@ -1,0 +1,81 @@
+/**a PHP application that retrieves and displays UOB student nationality data from the Bahrain Open Data Portal using their public API.
+The CSS file is done by Taqwa Sayed Mahdi Khalil Ali Abdulla (202208441).**/
+
+body {
+    /**Sets the font family for the entire document to Arial, with a fallback to sans-serif, and 20px margin around the body.**/
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+table {
+    /**table take up the full width of its container, collapses borders into a single border, and a 20px margin above and below the table.**/
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th {
+    /**Sets the background color of table headers to a light gray with 12px padding and centers the text.**/
+    background-color: #f4f4f4; 
+    padding: 12px;
+    text-align: center; 
+}
+td {
+    /** 12px padding to table cells, and sets a light gray border, and centers the text.**/
+    padding: 12px;
+    border: 1px solid rgb(211, 204, 204); 
+    text-align: center; 
+}
+/**Sets the background color of the first column cells to a light blue.**/
+td:nth-child(1) {
+    background-color: #e1f0fd; 
+}
+/**Sets the background color of the second column cells to a light yellow.**/
+td:nth-child(2) {
+    background-color: #fff6da; 
+}
+/**Sets the background color of the third column cells to a light green.**/
+td:nth-child(3) {
+    background-color: #d7ffe1; 
+}
+/**Sets the background color of the fourth column cells to a light pink.**/
+td:nth-child(4) {
+    background-color: #ffdfe2; 
+}
+/**Changes the background color of table headers to a slightly darker gray when hovered over.**/
+th:hover {
+    background-color: #ecebeb; 
+} 
+/**Changes the background color of the first column cells to a darker blue when hovered over.**/
+td:nth-child(1):hover {
+            background-color: #d7e7f3; 
+        }
+/**Changes the background color of the second column cells to a darker yellow when hovered over.**/
+td:nth-child(2):hover {
+            background-color: #f1ebd9; 
+        }
+/**Changes the background color of the third column cells to a darker green when hovered over.**/
+td:nth-child(3):hover {
+            background-color: #d1f1d2; 
+        }
+/**Changes the background color of the fourth column cells to a darker pink when hovered over.**/
+td:nth-child(4):hover {
+            background-color: #f1d5d6; 
+        }
+/**sets the font size of h1 elements to 20px and p elements to 14px with a line height of 1.5 for screens with maximum width of 600px.**/
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+/**sets the font size of h1 elements to 30px and p elements to 16px for screens with width between 601px and 900px.**/
+@media (min-width: 601px) and (max-width: 900px) {
+    h1 {
+        font-size: 30px; 
+    }
+    p {
+        font-size: 16px; 
+    }
+}
