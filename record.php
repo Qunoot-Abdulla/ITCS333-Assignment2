@@ -18,14 +18,16 @@ The PHP file is done by Qunoot Sayed Mahdi Khalil Ali Abdulla (202209102)-->
     if ($result) {
         echo '<table>';
         echo '<thead>';
-        echo '<tr><th>Year</th><th>Semester</th><th>Nationality</th><th>Number of Students</th></tr>';
+        echo '<tr><th>Year</th><th>Semester</th><th>The Program</th><th>Nationality</th><th>College</th><th>Number of Students</th></tr>';
         echo '</thead>';
         echo '<tbody>';
         foreach ($result['results'] as $record) {
             echo '<tr>';
             echo '<td>' . htmlspecialchars($record['year']) . '</td>';
             echo '<td>' . htmlspecialchars($record['semester']) . '</td>';
+            echo '<td>' . htmlspecialchars($record['the_programs']) . '</td>';
             echo '<td>' . htmlspecialchars($record['nationality']) . '</td>';
+            echo '<td>' . htmlspecialchars($record['colleges']) . '</td>';
             echo '<td>' . htmlspecialchars($record['number_of_students']) . '</td>';
             echo '</tr>';
         }
