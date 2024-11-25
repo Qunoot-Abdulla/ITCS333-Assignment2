@@ -78,4 +78,23 @@ td:nth-child(4):hover {
     p {
         font-size: 16px; 
     }
+    /**Align h1 to the center**/
+h1 {
+    text-align: center;
 }
+/**Sets the background color of the fourth column cells to a light orange.**/
+td:nth-child(5) {
+    background-color: #fcdec5; 
+}
+/**Sets the background color of the fourth column cells to a light purple.**/
+td:nth-child(6) {
+    background-color: #fadeff; 
+}
+/**Changes the background color of the fourth column cells to a darker orange when hovered over.**/
+td:nth-child(5):hover {
+            background-color: #ebd4c0; 
+        }
+/**Changes the background color of the fourth column cells to a darker purple when hovered over.**/
+td:nth-child(6):hover {
+            background-color: #e9d1ed; 
+        }
