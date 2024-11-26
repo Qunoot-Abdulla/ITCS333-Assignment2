@@ -2,24 +2,28 @@
 The CSS file is done by Taqwa Sayed Mahdi Khalil Ali Abdulla (202208441).**/
 
 body {
-    /**Sets the font family for the entire document to Arial, with a fallback to sans-serif, and 20px margin around the body.**/
+/**Sets the font family for the entire document to Arial, with a fallback to sans-serif, and 20px margin around the body.**/
     font-family: Arial, sans-serif;
     margin: 20px;
 }
+ /**Align h1 to the center**/
+h1 {
+    text-align: center;
+}
 table {
-    /**table take up the full width of its container, collapses borders into a single border, and a 20px margin above and below the table.**/
+ /**table take up the full width of its container, collapses borders into a single border, and a 20px margin above and below the table.**/
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
 }
 th {
-    /**Sets the background color of table headers to a light gray with 12px padding and centers the text.**/
+/**Sets the background color of table headers to a light gray with 12px padding and centers the text.**/
     background-color: #f4f4f4; 
     padding: 12px;
     text-align: center; 
 }
 td {
-    /** 12px padding to table cells, and sets a light gray border, and centers the text.**/
+/** 12px padding to table cells, and sets a light gray border, and centers the text.**/
     padding: 12px;
     border: 1px solid rgb(211, 204, 204); 
     text-align: center; 
@@ -39,6 +43,14 @@ td:nth-child(3) {
 /**Sets the background color of the fourth column cells to a light pink.**/
 td:nth-child(4) {
     background-color: #ffdfe2; 
+}
+/**Sets the background color of the fourth column cells to a light orange.**/
+td:nth-child(5) {
+    background-color: #fcdec5; 
+}
+/**Sets the background color of the fourth column cells to a light purple.**/
+td:nth-child(6) {
+    background-color: #fadeff; 
 }
 /**Changes the background color of table headers to a slightly darker gray when hovered over.**/
 th:hover {
@@ -60,6 +72,14 @@ td:nth-child(3):hover {
 td:nth-child(4):hover {
             background-color: #f1d5d6; 
         }
+/**Changes the background color of the fourth column cells to a darker orange when hovered over.**/
+td:nth-child(5):hover {
+            background-color: #ebd4c0; 
+        }
+/**Changes the background color of the fourth column cells to a darker purple when hovered over.**/
+td:nth-child(6):hover {
+            background-color: #e9d1ed; 
+        }
 /**sets the font size of h1 elements to 20px and p elements to 14px with a line height of 1.5 for screens with maximum width of 600px.**/
 @media (max-width: 600px) {
     h1 {
@@ -78,23 +98,3 @@ td:nth-child(4):hover {
     p {
         font-size: 16px; 
     }
-    /**Align h1 to the center**/
-h1 {
-    text-align: center;
-}
-/**Sets the background color of the fourth column cells to a light orange.**/
-td:nth-child(5) {
-    background-color: #fcdec5; 
-}
-/**Sets the background color of the fourth column cells to a light purple.**/
-td:nth-child(6) {
-    background-color: #fadeff; 
-}
-/**Changes the background color of the fourth column cells to a darker orange when hovered over.**/
-td:nth-child(5):hover {
-            background-color: #ebd4c0; 
-        }
-/**Changes the background color of the fourth column cells to a darker purple when hovered over.**/
-td:nth-child(6):hover {
-            background-color: #e9d1ed; 
-        }
